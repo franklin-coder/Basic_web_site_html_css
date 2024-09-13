@@ -1,0 +1,324 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 0.93rem;
+    padding: 0;
+    margin: 0;
+    background-color: f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-dark-grey {
+    background-color:#35424a ;
+    color: #ffffff;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    overflow:hidden ;
+    text-align: center;
+    width: 80%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header ul {display: flex;
+flex-direction: row;
+list-style: none;
+} 
+
+
+header ul li a {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2rem;
+    
+}
+header {
+    border-bottom: 3px solid #e8491d;
+    padding: 15px 0;
+}
+
+
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+header li {
+    padding: 0, 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 .highlight  {
+    color: #e8491e;
+    font-weight: bold;
+    
+}
+
+.bg-dark-grey .current a {
+    color: #e8491e;
+    font-weight: bold;}
+
+header nav {
+    margin-left: auto;
+}
+
+section#showcase {
+
+    min-height: 400px;
+    background-image: url('../images/showcase.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+} 
+
+section#showcase .container{
+    flex-direction: column;
+}
+
+section#showcase h2 {
+    font-size: 3.125rem;
+    text-overflow: 0 0 30px rgba(0,0,0,0.5);
+
+}
+
+section#showcase p {
+    font-size: 1.25rem;
+}
+
+section#newsletter {
+    padding: 15px 0;
+}
+
+section#newsletter input {
+
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+section#newsletter form {
+
+    margin-left: auto;
+}
+
+.button-1 {
+
+    height: 38px;
+    background-color: #e8491d;
+    border: none;
+    padding: 0 20px;
+    color:#ffffff ;
+}
+
+
+#boxes { display: flex;
+justify-content: center;
+margin-top: 20px;
+flex-grow: 1;} 
+
+
+
+section#boxes .box {
+    padding: 10px;
+    text-align: center;
+}
+
+section#boxes .box img {
+    width: 90px;
+}
+
+
+
+
+
+footer {
+    padding: 20px;
+    margin-top:20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #e8491e;
+    width: 100%;
+}
+/* 
+aca finaliza la pagina de home */
+
+/* 
+Page About inicia aqui */
+#content{
+    flex-grow: 1;
+}
+
+section#content .container {
+    align-items: flex-start;
+    text-align: left;
+    margin: 1rem auto;
+    flex-grow: 1;
+}
+
+/* section#content {
+
+    min-height: auto;
+} */
+
+section#content .container main{
+    flex-basis: 70%;
+}
+
+aside{
+    padding: 0 1rem 1rem 1rem;
+    margin-left: 3rem;
+    flex-basis: 30%;
+}
+
+
+.po-box {
+
+    background-color: #d3d3d3;
+    padding: 0.80rem 0.80rem 1rem 0.80rem;
+    margin: 10px;
+}
+/* 
+end the about page */
+
+/* 
+star the get a quote page */
+
+/* .formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+
+.formulario form h2 {
+    color:#35424a;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.formulario form input {
+    margin-bottom: 10px;
+    border: 1px solid #7b7878;
+    box-shadow: 2px 3px 3px rgb(168, 159, 159);
+}
+
+.formulario form span{
+
+    color: #35424a;
+;
+} */
+/* 
+ending the get o quote page */
+
+
+/* 
+media query practice  */
+main form {
+    background-color: #e2e0e0;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #bbbbbb;
+    
+    }
+
+main form label:not(.data-value) {
+
+font-weight: bold;
+margin-right: 0.5rem;
+}
+
+main form div {
+    margin-bottom: 1rem;
+}
+
+.tittle-form {
+
+    background-color: none;
+    text-align: center;
+    margin-right: 38%;
+    margin-top: 2rem;
+}
+
+main form .my-input {
+
+    width: 45%;
+}
+
+main form .my-input-hour{
+
+    width: 3rem;
+}
+/* 
+se acabo la section de form */
+
+.container{
+    flex-direction: column;
+}
+
+section#content .container {align-items: stretch;}
+
+header nav section#newsletter form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {margin-left: 0;
+flex-basis: none;}
+
+/* 
+inicia el media query */
+
+@media (min-width: 768px){
+
+    .container{ flex-direction: row;}
+
+
+section#content .container {
+
+    align-items: start;
+}
+
+header nav, section#newsletter form{
+    margin-right: 0;
+}
+
+aside {
+    margin-left: 3rem;
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+
+
+
+}
